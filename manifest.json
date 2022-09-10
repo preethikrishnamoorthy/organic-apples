@@ -1,26 +1,19 @@
 {
-    "name": "Getting Started Example",
-    "description": "Build an Extension!",
-    "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
+    "name": "Organic Apples",
+    "description": "show url.",
+    "version": "0.2",
     "background": {
-      "service_worker": "background.js"
+        "scripts": ["event.js"],
+        "persistent": false
     },
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "/images/get_started16.png",
-        "32": "/images/get_started32.png",
-        "48": "/images/get_started48.png",
-        "128": "/images/get_started128.png"
-      }
+    "browser_action": {
+        "default_icon": "images/get_started16.png",
+        "default_popup": "popup.html"
     },
-    "icons": {
-        "16": "/images/get_started16.png",
-        "32": "/images/get_started32.png",
-        "48": "/images/get_started48.png",
-        "128": "/images/get_started128.png"
-    },
-    "options_page": "options.html"
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
 }
