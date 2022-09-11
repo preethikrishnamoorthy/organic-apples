@@ -26,20 +26,20 @@
 // }
 
 //https://markb.uk/building-a-simple-google-chrome-extension.html
-window.addEventListener("load", setupFunction);
+// window.addEventListener("load", setupFunction);
 
-function setupFunction(eventTarget) {
-  this.document.getElementById("title").innerHTML = "window setup!";
-  chrome.runtime.getBackgroundPage(function(currPage) {
-    this.document.getElementById("cookies").innerHTML = "cookkiiiiieee";
-    currPage.getInfo(processInfo);
-  });
+// function setupFunction(eventTarget) {
+//   this.document.getElementById("title").innerHTML = "window setup!";
+//   chrome.runtime.getBackgroundPage(function(currPage) {
+//     this.document.getElementById("cookies").innerHTML = "cookkiiiiieee";
+//     currPage.getInfo(processInfo);
+//   });
 
-  function processInfo(query) {
-    this.document.getElementById("url").innerHTML = "urlurlrul";
-    response(query.query);
-  }
-}
+//   function processInfo(query) {
+//     this.document.getElementById("url").innerHTML = "urlurlrul";
+//     response(query.query);
+//   }
+// }
 
 
 // Initialize button with user's preferred color
@@ -60,10 +60,10 @@ function setupFunction(eventTarget) {
 //     });
 //   });
   
-//   // The body of this function will be executed as a content script inside the
-//   // current page
-//   function setPageBackgroundColor() {
-//     chrome.storage.sync.get("color", ({ color }) => {
-//       document.body.style.backgroundColor = color;
-//     });
-//   }
+  // The body of this function will be executed as a content script inside the
+  // current page
+  // function setPageBackgroundColor() {
+  //   chrome.storage.sync.get("color", ({ color }) => {
+  //     document.body.style.backgroundColor = color;
+  //   });
+  // }

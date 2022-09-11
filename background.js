@@ -1,5 +1,5 @@
 // background.js
-console.log("background running!");
+// console.log("background running!");
 
 // let color = '#3aa757';
 
@@ -8,10 +8,10 @@ console.log("background running!");
 //   console.log('Default background color set to %cgreen', `color: ${color}`);
 // });
 
-function getInfo(whenFinished)
-{
-  chrome.runtime.onMessage.addEventListener(function(message){
-    console.log("message received!");
-    whenFinished(message);
-  });
-}
+// function getInfo(whenFinished)
+// {
+//   chrome.runtime.onMessage.addEventListener(function(message){
+//     console.log("message received!");
+//     whenFinished(message);
+//   });
+// }

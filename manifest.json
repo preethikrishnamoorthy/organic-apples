@@ -1,11 +1,10 @@
 {
-    "manifest_version": 2,
-    "name": "Organic Apples",
-    "description": "show url.",
-    "version": "0.2",
+    "manifest_version": 3,
+    "name": "Spot My Search",
+    "description": "Extension providing recommendations for data privacy",
+    "version": "0.3",
     "background": {
-        "scripts": ["event.js"],
-        "persistent": false
+        "service_worker": "background.js"
     },
     "content_scripts": [
       {
@@ -22,10 +21,5 @@
         "48": "/images/get_started48.png",
         "128": "/images/get_started128.png"
       }
-    },
-    "permissions": [
-        "tabs",
-        "http://*/*",
-        "https://*/*"
-    ]
+    }
 }
