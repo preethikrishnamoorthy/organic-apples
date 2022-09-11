@@ -3,9 +3,6 @@
     "name": "Spot My Search",
     "description": "Extension providing recommendations for data privacy",
     "version": "0.3",
-    "background": {
-        "service_worker": "background.js"
-    },
     "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
