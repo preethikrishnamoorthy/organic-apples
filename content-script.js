@@ -1,5 +1,4 @@
 let searchQuery = document.getElementsByClassName("gLFyf")[0].value; 
-//messaging examples: https://developer.chrome.com/docs/extensions/mv3/messaging/  (license: https://creativecommons.org/licenses/by-sa/4.0/)
 chrome.runtime.onMessage.addListener(processRequest);
 function processRequest(requestMessage, sender, responseFunction)
 {
