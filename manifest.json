@@ -6,7 +6,13 @@
     "background": {
       "service_worker": "background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "permissions": ["storage", "activeTab", "scripting", "tabs", "cookies", "nativeMessaging"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
