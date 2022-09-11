@@ -14,7 +14,7 @@ function processData(dataFromSite) {
   }
   if(flagged){
     document.getElementById("search").innerHTML = "You may be about to visit a social media site!";
-    document.getElementById("recs").innerHTML = "Social media companies may extract and sell your data (source: https://www.businessnewsdaily.com/10625-businesses-collecting-data.html). Avoid revealing too much personal information!";
+    document.getElementById("recs").innerHTML = "Social media companies may extract and sell personal information (source: https://www.businessnewsdaily.com/10625-businesses-collecting-data.html). Avoid revealing too much online!";
   }
   else
   {
