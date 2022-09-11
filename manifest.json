@@ -9,7 +9,7 @@
         "js": ["content-script.js"]
       }
     ],
-    "permissions": ["storage", "activeTab", "scripting", "tabs", "cookies", "nativeMessaging"],
+    "permissions": ["activeTab", "scripting", "tabs", "nativeMessaging"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
