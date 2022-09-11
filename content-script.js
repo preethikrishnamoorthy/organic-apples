@@ -1,3 +1,26 @@
+const last_search = document.getElementsByClassName("gLFyf")[0].value;
+
+
+var observer = new MutationObserver(callback);
+
+observer.observe(document, {
+    childList: true, // report added/removed nodes
+    subtree: true,   // observe any descendant elements
+    // attributes: true,
+    characterData: true,
+    oldValue: true
+});
+
+function callback (mutations) {
+    console.log(mutations[0])
+    for (let mutation of mutations) {
+        console.log('mutation', mutations[0].target.baseURI)
+    }
+}
+
+
+        
+
 let searchQuery = document.getElementsByClassName("gLFyf")[0].value; 
 chrome.runtime.onMessage.addListener(processRequest);
 function processRequest(requestMessage, sender, responseFunction)

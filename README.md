@@ -8,4 +8,6 @@ License: https://creativecommons.org/licenses/by-sa/4.0/
 Chrome extension starter code: https://developer.chrome.com/docs/extensions/mv3/getstarted/ 
 License: https://creativecommons.org/licenses/by-sa/4.0/
 
-
+AI/ML tutorials: 
+https://stackabuse.com/python-for-nlp-movie-sentiment-analysis-using-deep-learning-in-keras/
+https://www.datacamp.com/tutorial/naive-bayes-scikit-learn
